@@ -4,7 +4,7 @@ MAINTAINER zhouzhan "zhanz@deepboosting.com"
 
 ADD default.conf /etc/nginx/conf.d
 
-ADD api/ /usr/share/nginx/html/api
+ADD api/public/index.php /usr/share/nginx/html
 #复制项目
 
 EXPOSE 80
