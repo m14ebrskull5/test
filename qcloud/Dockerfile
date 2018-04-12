@@ -4,7 +4,7 @@ MAINTAINER zhouzhan "zhanz@deepboosting.com"
 
 ADD default.conf /etc/nginx/conf.d
 
-ADD api /usr/share/nginx/html
+ADD api /usr/share/nginx/html/api #复制项目
 
 RUN ln -sf /dev/stdout /var/log/nginx/access.log \
 	&& ln -sf /dev/stderr /var/log/nginx/error.log
