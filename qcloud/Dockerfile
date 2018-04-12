@@ -5,7 +5,7 @@ MAINTAINER zhouzhan
 WORKDIR ~
 RUN wget http://tengine.taobao.org/download/tengine-2.1.2.tar.gz && tar -xvf tengine-2.1.2.tar.gz
 WORKDIR ~/tengine-2.1.2
-
-RUN ./configure --prefix=/usr/local/nginx  --with-http_ssl_module && make && make install
+RUN ls
+#RUN ./configure --prefix=/usr/local/nginx  --with-http_ssl_module && make && make install
 
 CMD /bin/bash
