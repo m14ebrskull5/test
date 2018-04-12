@@ -8,7 +8,9 @@ RUN yum install -y gcc zlib zlib-devel openssl gcc automake db4-devel libpng-dev
 
 WORKDIR ~
 RUN wget http://tengine.taobao.org/download/tengine-2.1.2.tar.gz && tar -xvf tengine-2.1.2.tar.gz && rm tengine-2.1.2.tar.gz 
-WORKDIR ~/tengine-2.1.2 
+
+WORKDIR ~/tengine-2.1.2
+
 RUN ./configure --prefix=/usr/local/nginx  --with-http_ssl_module && make && make install
 
 EXPOSE 80
