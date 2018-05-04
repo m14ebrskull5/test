@@ -13,5 +13,6 @@
 
 Route::get('/s', function () {
 	phpinfo();die;
+	
     return view('welcome');
 });
