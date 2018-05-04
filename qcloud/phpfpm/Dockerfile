@@ -1,5 +1,7 @@
 FROM ccr.ccs.tencentyun.com/cluster-alpha/phpfpm:base
 
+RUN docker-php-ext-install -j$(nproc) opcache
+
 ADD api /var/www/html
 
 WORKDIR /var/www/html
