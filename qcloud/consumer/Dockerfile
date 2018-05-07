@@ -1,6 +1,4 @@
-FROM php:7.2-cli
-
-RUN docker-php-ext-install bcmath
+FROM ccr.ccs.tencentyun.com/cluster-alpha/consumer:latest
 
 COPY consumer-default.php /root/consumer-default.php
 

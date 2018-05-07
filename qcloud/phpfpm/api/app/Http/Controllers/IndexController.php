@@ -8,12 +8,12 @@ class IndexController extends Controller
 {
     public function index()
     {
-    	phpinfo();die;
-    	$connection = new AMQPStreamConnection('172.17.0.4', 5672, 'guest', 'guest');
+    	// phpinfo();die;
+    	$connection = new AMQPStreamConnection('some-rabbit', 5672, 'guest', 'guest');
 		$channel = $connection->channel();
     	$channel->queue_declare('hello', false, false, false, false);
 
-		$msg = new AMQPMessage('Hello World!');
+		$msg = new AMQPMessage('Hello World!###@'.rand(0,100));
 		$channel->basic_publish($msg, '', 'hello');
 
 		echo " [x] Sent 'Hello World!'\n";
