@@ -1,4 +1,4 @@
-APP_NAME=Laravel
+APP_NAME=LaravelPRO
 APP_ENV=local
 APP_KEY=base64:EcnZcF70mRQYolJ/GBkqIcivaRFHLgHdDuTdjywMzrM=
 APP_DEBUG=false
