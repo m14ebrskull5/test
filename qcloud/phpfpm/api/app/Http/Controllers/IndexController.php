@@ -8,7 +8,7 @@ class IndexController extends Controller
 {
     public function index()
     {
-    	// phpinfo();die;
+    	phpinfo();die;
     	$connection = new AMQPStreamConnection('172.17.0.4', 5672, 'guest', 'guest');
 		$channel = $connection->channel();
     	$channel->queue_declare('hello', false, false, false, false);
