@@ -1,8 +1,8 @@
 APP_NAME=Laravel
 APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=http://localhost
+APP_KEY=base64:EcnZcF70mRQYolJ/GBkqIcivaRFHLgHdDuTdjywMzrM=
+APP_DEBUG=false
+APP_URL=https://tcloud.microvcard.com
 
 LOG_CHANNEL=stack
 
