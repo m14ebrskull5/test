@@ -6,7 +6,7 @@ WORKDIR /var/www/html
 
 RUN composer install \
     && chmod -R 777 /var/www/html/storage \
-    && cp .env.example .env \
+    && ./init.sh \
     && php artisan key:generate 
 
 EXPOSE 9000
