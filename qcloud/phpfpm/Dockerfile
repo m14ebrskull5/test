@@ -7,9 +7,8 @@ WORKDIR /var/www/html
 RUN chmod -R 777 /var/www/html/storage \
     && chmod 777 ./init.sh
 
-RUN ./init.sh \
-    && php artisan key:generate 
+RUN php artisan key:generate 
 
 EXPOSE 9000
 
-CMD ["php-fpm"]
+CMD ["/var/www/html/init.sh", "&&", "php-fpm"]
