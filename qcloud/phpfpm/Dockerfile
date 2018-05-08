@@ -4,8 +4,7 @@ ADD api /var/www/html
 
 WORKDIR /var/www/html
 
-RUN composer install \
-    && chmod -R 777 /var/www/html/storage \
+RUN chmod -R 777 /var/www/html/storage \
     && chmod 777 ./init.sh \
     && ./init.sh \
     && php artisan key:generate 
