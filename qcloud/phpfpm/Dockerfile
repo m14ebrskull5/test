@@ -11,4 +11,4 @@ RUN php artisan key:generate
 
 EXPOSE 9000
 
-CMD ["/var/www/html/init.sh", "&&", "php-fpm"]
+CMD ["php-fpm"]
