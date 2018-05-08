@@ -5,8 +5,9 @@ ADD api /var/www/html
 WORKDIR /var/www/html
 
 RUN chmod -R 777 /var/www/html/storage \
-    && chmod 777 ./init.sh \
-    && ./init.sh \
+    && chmod 777 ./init.sh
+
+RUN ./init.sh \
     && php artisan key:generate 
 
 EXPOSE 9000
