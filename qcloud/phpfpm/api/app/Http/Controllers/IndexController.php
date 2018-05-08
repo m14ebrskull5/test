@@ -9,7 +9,6 @@ class IndexController extends Controller
     public function index()
     {
     	// phpinfo();die;
-    	return env("APP_NAME");
     	$connection = new AMQPStreamConnection('some-rabbit', 5672, 'guest', 'guest');
 		$channel = $connection->channel();
     	$channel->queue_declare('hello', false, false, false, false);

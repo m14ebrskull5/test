@@ -1,6 +1,6 @@
 #!/bin/sh
 
-if [ "$ENV" = "" ]
+if [ "$env" = "" ]
 then
   cp .env.dev .env
 else  
