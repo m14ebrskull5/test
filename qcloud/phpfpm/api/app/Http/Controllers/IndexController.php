@@ -10,7 +10,7 @@ class IndexController extends Controller
     {
     	// phpinfo();die;
 
-    	return ENV("APP_NAME");
+    	return ENV("APP_NAME").'hello';
     	$connection = new AMQPStreamConnection('some-rabbit', 5672, 'guest', 'guest');
 		$channel = $connection->channel();
     	$channel->queue_declare('hello', false, false, false, false);
