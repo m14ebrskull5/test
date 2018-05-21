@@ -6,7 +6,7 @@ WORKDIR /var/www/html
 
 RUN chmod -R 777 /var/www/html/storage 
 
-RUN php artisan key:generate 
+#RUN php artisan key:generate 
 
 EXPOSE 9000
 
