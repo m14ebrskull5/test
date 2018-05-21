@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use PhpAmqpLib\Connection\AMQPStreamConnection;
 use PhpAmqpLib\Message\AMQPMessage;
+use PhpAmqpLib\Wire\AMQPTable;
 
 class IndexController extends Controller
 {
